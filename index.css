@@ -7,7 +7,7 @@ html, body {
     padding: 0;
     display: block;
     margin: 50px auto;
-    max-height: 65vh;
+    max-height: 91vh;
     max-width: 100%;
 }
 .carousel-caption{
@@ -22,14 +22,6 @@ html, body {
 .carousel-indicators li{
      background-color: #fff;
 }
-.navbar-light .navbar-toggler {
-    border: none;
-    outline: none;
-    color: orange;
-}
-.navbar-light{
-    line-height: 40px;
-}
 .navbar-brand {
     line-height: 1em;
     font-family: 'Lato', sans-serif;
@@ -38,9 +30,6 @@ html, body {
 }
 span{
     letter-spacing: 10px;
-}
-.brand-icon{
-    
 }
 #brand-icon1{
     color: rgb(226, 94, 94);
@@ -51,29 +40,55 @@ span{
 #brand-icon3{
     color: rgb(248, 173, 10);
 }
+.form-control::placeholder{
+    color: orange;
+    opacity: 1;
+}
+.search-container .form-control{
+    color: orange;
+    outline: none;
+    border: 1px solid orange;
+    box-shadow: none;
+}
+#search-btn{
+    color: orange;
+    background-color: white;
+}
+#search-btn:hover{
+    color: white;
+    background-color: orange;
+}
 #navContent{
     margin: auto 50px;
 }
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
     color: orange;
-    font-size: 16px;
+}
+.navbar-light{
+    line-height: 40px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(243, 170, 11);
+    font-size: 17px;
     text-decoration: none;
     list-style: none;
     margin: auto 10px;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-    color: orangered !important;
+    color: rgb(247, 7, 7) !important;
 }
 li > a::after{
     content: "";
     display: block;
-    height: 3px;
+    height: 2px;
     background-color: red;
     transform: scaleX(0);
     transition: transform 0.3s;
 }
 li > a:hover::after{
-    transform: scaleX(1);
+    transform: scaleX(1.5);
     transition: transform 0.3s;
 }
 .container{
@@ -150,7 +165,7 @@ li > a:hover::after{
 header{
     position: relative;
     background-color: black;
-    height: 75vh;
+    height: 90vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
