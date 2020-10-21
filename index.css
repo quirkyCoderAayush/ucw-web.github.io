@@ -41,7 +41,7 @@ span{
     color: rgb(248, 173, 10);
 }
 .form-control::placeholder{
-    color: orange;
+    color: rgb(247, 210, 141);
     opacity: 1;
 }
 .search-container .form-control{
@@ -51,12 +51,12 @@ span{
     box-shadow: none;
 }
 #search-btn{
-    color: orange;
-    background-color: white;
-}
-#search-btn:hover{
     color: white;
     background-color: orange;
+}
+#search-btn:hover{
+    color: orange;
+    background-color: white;
 }
 #navContent{
     margin: auto 50px;
