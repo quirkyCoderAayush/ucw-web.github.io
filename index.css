@@ -40,26 +40,26 @@ span{
 #brand-icon3{
     color: rgb(248, 173, 10);
 }
-.form-control::placeholder{
-    color: rgb(247, 210, 141);
-    opacity: 1;
-}
-.search-container .form-control{
-    color: orange;
-    outline: none;
-    border: 1px solid orange;
-    box-shadow: none;
-}
-#search-btn{
-    color: white;
-    background-color: orange;
-}
-#search-btn:hover{
-    color: orange;
+input[type=text]{
+    width: 130px;
+    height: 35px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    border: 1px solid #626262;
+    border-radius: 4px;
+    font-size: 16px;
     background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 2px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+input[type=text]:focus{
+    width: 100%;
 }
 #navContent{
-    margin: auto 50px;
+    margin: auto;
 }
 .navbar-light .navbar-toggler {
     border: none;
@@ -98,11 +98,11 @@ li > a:hover::after{
     width: 54%;
     height: auto;
     margin: 15px auto;
+    transition: all 0.3s ease-in 0s;
 }
 .responsive:hover{
     transition: 0.5s;
     transform: rotate3d(0, 1, -1, 45deg);
-    transition: all 0.3s ease 0s;
 }
 .content1-image-box-img{
     text-align: center;
@@ -147,20 +147,15 @@ li > a:hover::after{
     text-align: left;
     color: rgb(7, 252, 60);
 }
-.card-text:hover{
-    font-weight: bold;
-    font-style: italic;
-}
 .card-img-bottom{
     border-radius: 50%;
     width: 50%;
     margin: 15px auto;
     vertical-align: bottom;
-    /* transition: all 0.3s ease-in-out 0s; */
+    transition: all 0.2s ease-in-out 0s;
 }
 .card-img-bottom:hover{
-    transform: rotate(360deg);
-    transition: all 0.2s ease-in-out 0s;
+    transform: scale(1.1);
 }
 header{
     position: relative;
