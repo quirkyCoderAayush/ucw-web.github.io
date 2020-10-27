@@ -23,6 +23,8 @@ html, body {
      background-color: #fff;
 }
 .navbar-brand {
+    margin-left: 10px;
+    margin-bottom: 5px;
     line-height: 1em;
     font-family: 'Lato', sans-serif;
     letter-spacing: 3px;
@@ -40,23 +42,39 @@ span{
 #brand-icon3{
     color: rgb(248, 173, 10);
 }
-input[type=text]{
-    width: 130px;
-    height: 35px;
+#abs{
     margin-right: 20px;
+}
+form{
+    position: relative;
+}
+input[type=text]{
+    width: 100%;
+    height: 35px;
     box-sizing: border-box;
-    border: 1px solid #626262;
-    border-radius: 4px;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 20px;
     font-size: 16px;
-    background-color: white;
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 2px;
+    background-color: transparent;
+    padding: 5px;
+    outline: none;
     -webkit-transition: width 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-input[type=text]:focus{
-    width: 100%;
+input::placeholder{
+    color: orange;
+}
+#abs #fa1{
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: orange;
+    font-size: 18px;
 }
 #navContent{
     margin: auto;
